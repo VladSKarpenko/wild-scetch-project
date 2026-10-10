@@ -1,0 +1,57 @@
+<section class="register-section" id="register">
+  <div class="container register-container">
+    <div class="register-content">
+      <h2 class="title register-title">Register</h2>
+      <form class="register-form" name="register-form">
+        <div class="form-field">
+          <label class="form-label" for="name">Name*</label>
+          <input
+            class="form-input"
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="Emma"
+            pattern="^[a-zA-Z\s\.]{5,64}$"
+            required
+          />
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="email">Email*</label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="user_email"
+            placeholder="hello@wildsketch.com"
+            pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+            required
+          />
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="comment">Describe your skills</label>
+          <textarea
+            class="form-comment"
+            id="comment"
+            name="user_comment"
+            placeholder="Type your skills..."
+            maxlength="500"
+          ></textarea>
+        </div>
+        <button class="submit-btn" type="submit">Register</button>
+      </form>
+    </div>
+
+    <img
+      class="img register-image"
+      src="./img/register/register-1.jpg"
+      srcset="
+        ./img/register/register-1.jpg    1x,
+        ./img/register/register-1@2x.jpg 2x
+      "
+      alt="Woman painting outdoors in the park"
+      width="335"
+      height="286"
+      loading="lazy"
+    />
+  </div>
+</section>
